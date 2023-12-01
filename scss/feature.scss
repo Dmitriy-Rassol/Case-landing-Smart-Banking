@@ -1,0 +1,101 @@
+.feature {
+  display: flex;
+  justify-content: center;
+  padding-bottom:178px;
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 591px 1fr;
+    padding: 0px 0 0 90px;
+  }
+
+  &-img {
+    background: #cfedff;
+    position: relative;
+
+    & img {
+      content: "";
+      position: absolute;
+      width: 780px;
+      left: -137px;
+      top: 28px;
+    }
+  }
+
+  &-info {
+    padding-left: 100px;
+
+    & h2 {
+      color: #192430;
+      font-family: var(--font-bai);
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 62px;
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+
+    & > p {
+      color: #727272;
+      font-family: var(--font-roboto);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      padding-bottom: 69px;
+      max-width: 410px;
+    }
+  }
+
+  &-list {
+    max-width: 386px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    position: relative;
+
+    &:first-child::before {
+      content: url(../assets/img/file.svg);
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -30px;
+      left: -150px;
+    }
+
+    &:last-child::before {
+      content: url(../assets/img/calendar.svg);
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -30px;
+      left: -150px;
+    }
+
+    & h3 {
+      color: #222;
+      font-family: var(--font-bai);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      padding-bottom: 9px;
+    }
+
+    & p {
+      color: #727272;
+      font-family: var(--font-roboto);
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+    }
+
+    &:first-child p {
+      padding-bottom: 33px;
+    }
+  }
+}
