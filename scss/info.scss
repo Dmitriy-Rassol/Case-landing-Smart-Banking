@@ -1,27 +1,39 @@
 .info {
-    position: relative;
-    background: hsla(202, 100%, 66%, 0.25);
-    padding-top: 134px;
-    padding-bottom: 139px;
+  position: relative;
+  background: hsla(202, 100%, 66%, 0.25);
+  padding-top: 134px;
+  padding-bottom: 139px;
+  @media screen and (max-width: 900px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-    &::before {
-        content: url(../assets/img/Ellipse.svg);
-        width: 70px;
-        height: 70px;
-        position: absolute;
-        top: -35px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  &::before {
+    content: url(../assets/img/Ellipse.svg);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   &-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 30%;
+    @media screen and (max-width: 900px) {
+      column-gap: 10%;
+      justify-content: space-around;
+      align-items: self-start;
+    }
   }
 
   &-content {
     max-width: 264px;
+    @media screen and (max-width: 900px) {
+      max-width: 100%;
+    }
   }
 
   &-content h4 {
@@ -31,6 +43,13 @@
     font-weight: 500;
     line-height: 38px;
     padding-bottom: 16px;
+    @media screen and (max-width: 900px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   &-content:first-child h4 {
@@ -43,5 +62,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+    }
   }
 }
